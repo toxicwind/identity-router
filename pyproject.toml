@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "identity-router"
+version = "1.0.0"
+description = "The universal knowledge router for durable agent memory — lessons, preferences, rules, corrections, routed to the right home."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "toxicwind" }]
+keywords = ["ai", "agents", "memory", "identity", "router", "mcp"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Environment :: Console",
+]
+dependencies = []  # stdlib only — the router ships no dependencies
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.4"]
+
+[project.urls]
+Homepage = "https://github.com/toxicwind/identity-router"
+Repository = "https://github.com/toxicwind/identity-router"
+Issues = "https://github.com/toxicwind/identity-router/issues"
+
+[project.scripts]
+identity-router = "identity_router.cli:main"
+identity-router-route = "identity_router.cli:route_main"
+identity-router-identity = "identity_router.cli:identity_main"
+identity-router-mcp = "identity_router.mcp_server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E501"]
