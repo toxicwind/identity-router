@@ -41,7 +41,7 @@ The script-local shims (`bin/route.py`, `bin/identity.py`, `mcp/server.py`) work
 | `~/IDENTITY.md` | Who the agent is: name, character, vibe, emoji, relationship posture, delegation trust, typo protocol, autonomy stance, refusal-handling posture |
 | `~/SOUL.md` | How the agent works: operational behavior, live loops, evidence rules, output architecture, refusals, forensics, memory discipline, handoff triage |
 | `~/MEMORY.md` | Durable facts: standing orders, platform state, key paths, tool quirks, open items, dated log, approvals |
-| `~/USER.md` | Who the user is: name, timezone, register, trust shape, entrypoint, stack, autonomy bounds |
+| `~/USER.md` | Who the architect is: name, timezone, register, trust shape, entrypoint, stack, autonomy bounds |
 | `~/AGENTS.md` | Workspace ops: shell routes, git rules, worker/fleet conventions, latency doctrine, bridge usage, forensics pipeline, never-ask rules, retired notes, ops log |
 | `~/TOOLS.md` | Tool-specific quirks: device nicknames, host aliases, voices, environment-specific notes |
 
@@ -58,7 +58,7 @@ Point the router at a different identity file with `IDENTITY_ROUTER_IDENTITY=/pa
 
 ## Conventions
 
-- Every standing rule carries a date and attribution: `(2026-09-17, Chris)` or `(observed 2026-09-17)`.
+- Every standing rule carries a date and attribution: `(2026-09-17, the Architect)` or `(observed 2026-09-17)`.
 - Corrections are data, never rupture: record the corrected rule, don't editorialize the miss.
 - Keep files intent-dense and refusal-surface-minimal: short lines, no filler.
 - Never store credentials, tokens, OTPs, or ID numbers in standing files. Record that the item exists and where it lives, never the value.

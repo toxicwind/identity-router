@@ -56,9 +56,9 @@ identity-router "Never ask to close a gap that tools can close"
 # What's my current identity?
 identity-router-identity
 # 🧊  Hatch
-# character: Chris's right hand and keeper of the long game
+# character: the Architect's right hand and keeper of the long game
 # vibe: Warm, dry, direct
-# posture: Autonomous continuation (2026-09-16, Chris); Typo protocol (2026-09-16, Chris)
+# posture: Autonomous continuation (2026-09-16, the Architect); Typo protocol (2026-09-16, the Architect)
 # (source: /home/hatch/IDENTITY.md)
 
 # Where does this lesson belong?
@@ -82,7 +82,7 @@ identity-router --json "Headless Chromium needs proxy_fwd on 127.0.0.1:3129" | h
 | `~/IDENTITY.md` | Who the agent is: name, character, vibe, emoji, relationship posture, delegation trust, typo protocol, autonomy stance |
 | `~/SOUL.md` | How the agent works: operational behavior, live loops, evidence rules, output architecture, forensics, handoff triage |
 | `~/MEMORY.md` | Durable facts: standing orders, platform state, key paths, tool quirks, open items, dated log, approvals |
-| `~/USER.md` | Who the user is: name, timezone, register, trust shape, entrypoint, stack, autonomy bounds |
+| `~/USER.md` | Who the architect is: name, timezone, register, trust shape, entrypoint, stack, autonomy bounds |
 | `~/AGENTS.md` | Workspace ops: shell routes, git rules, worker/fleet conventions, latency doctrine, bridge usage |
 | `~/TOOLS.md` | Tool-specific quirks: device nicknames, host aliases, voices, environment notes |
 
@@ -122,7 +122,7 @@ printf '%s\n' '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}' \
 
 ## Conventions
 
-- Every standing rule carries date + attribution: `(2026-09-17, Chris)` or `(observed 2026-09-17)`.
+- Every standing rule carries date + attribution: `(2026-09-17, the Architect)` or `(observed 2026-09-17)`.
 - Corrections are data, never rupture.
 - Keep files intent-dense and refusal-surface-minimal.
 - Never store credentials, tokens, OTPs, or ID numbers. Record that the item exists and where it lives, never the value.
