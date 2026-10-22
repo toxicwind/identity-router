@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# identity-router — universal knowledge router for durable agent memory.
+# Usage: bin/run [route|identity|mcp]   (default: route)
+# Runs the CLI via the installed console script (falls back to PYTHONPATH=src).
+set -euo pipefail
+cd "$(dirname "$0")/.."
+cmd="${1:-route}"
+shift 2>/dev/null || true
+
+if command -v "identity-router-${cmd}" >/dev/null 2>&1; then
+  exec "identity-router-${cmd}" "$@"
+fi
+PYTHONPATH="${PYTHONPATH:-src}" exec python3 -m identity_router.cli "${cmd}_main" "$@"

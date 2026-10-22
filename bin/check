@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# identity-router — self-test gate (PASS/FAIL).
+# Runs the pytest suite (41 tests) with PYTHONPATH=src, then ruff lint over src+tests.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "== identity-router check: start =="
+command -v python3 >/dev/null 2>&1 || { echo "FAIL: python3 not found"; exit 1; }
+
+echo "-- pytest --"
+PYTHONPATH=src python3 -m pytest -q 2>&1 | tail -4
+if ! PYTHONPATH=src python3 -m pytest -q 2>&1 | grep -qE "passed"; then
+  echo "FAIL: pytest did not pass"; exit 1
+fi
+
+if command -v ruff >/dev/null 2>&1; then
+  echo "-- ruff --"
+  ruff check src tests 2>&1 | tail -3
+fi
+
+echo "== identity-router check: PASS =="
