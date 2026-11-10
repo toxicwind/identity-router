@@ -1,0 +1,37 @@
+{
+  "name": "identity-router",
+  "version": "1.0.0",
+  "description": "The universal knowledge router for durable agent memory",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot run src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsgo --noEmit -p tsconfig.json",
+    "lint": "biome check .",
+    "fmt": "biome format --write .",
+    "build": "bun build"
+  },
+  "bin": {
+    "identity-router": "./bin/identity-router.ts"
+  },
+  "files": [
+    "src",
+    "bin",
+    "mcp",
+    "tests",
+    "examples",
+    "docs"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-types": "latest",
+    "typescript": "latest",
+    "@biomejs/biome": "latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "private": true
+}

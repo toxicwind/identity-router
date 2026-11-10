@@ -1,4 +1,0 @@
-[tasks]
-run = "bin/run"
-check = "bin/check"
-test = "PYTHONPATH=src python3 -m pytest -q"
