@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/identity_router/__init__.py
+src/identity_router/cli.py
+src/identity_router/identity.py
+src/identity_router/mcp_server.py
+src/identity_router/route.py
+src/identity_router.egg-info/PKG-INFO
+src/identity_router.egg-info/SOURCES.txt
+src/identity_router.egg-info/dependency_links.txt
+src/identity_router.egg-info/entry_points.txt
+src/identity_router.egg-info/requires.txt
+src/identity_router.egg-info/top_level.txt
+tests/test_identity.py
+tests/test_route.py

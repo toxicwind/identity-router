@@ -1,0 +1,5 @@
+[console_scripts]
+identity-router = identity_router.cli:main
+identity-router-identity = identity_router.cli:identity_main
+identity-router-mcp = identity_router.mcp_server:main
+identity-router-route = identity_router.cli:route_main
